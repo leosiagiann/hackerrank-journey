@@ -18,7 +18,7 @@ vector<string> split(const string &);
 int getTotalX(vector<int> a, vector<int> b)
 {
     // Write your code here
-    int count = 0;
+    int hitung = 0;
     int max_a = *max_element(a.begin(), a.end());
     int min_b = *min_element(b.begin(), b.end());
     for (int i = max_a; i <= min_b; i++)
@@ -44,9 +44,9 @@ int getTotalX(vector<int> a, vector<int> b)
             }
         }
         if (cek)
-            count++;
+            hitung++;
     }
-    return count;
+    return hitung;
 }
 
 int main()
